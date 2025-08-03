@@ -3,7 +3,7 @@ using namespace std;
 
 
 void maxSubarraySum(int *arr,int n){
-    int maxsum = 0;
+    int maxsum = INT_MIN;
     for(int start = 0; start < n; start++){
         for(int end = start; end < n; end++){
             int sum = 0;
